@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <!-- 移动设备优先 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/jquery-1.12.3.js" ></script>
+    <script src="js/bootstrap.js" ></script>
+    <style type="text/css">
+        div{
+            border:1px solid green;
+        }
+        @media (min-width: 768px) { 
+            div{
+                background-color: yellow;
+            }
+         }
+
+        @media (min-width:992px) { 
+            div{
+                background-color:red;
+            }
+        }
+        @media (min-width: 1200) {
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="row ">
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-3">col-md-3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">col-md-8</div>
+            <div class="col-row-4">col-md-4</div>
+        </div>
+    </div>
+</body>
+</html>
