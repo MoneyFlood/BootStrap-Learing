@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <!-- 移动设备优先 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>栅格布局2</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/jquery-1.12.3.js" ></script>
+    <script src="js/bootstrap.js" ></script>
+    <style type="text/css">
+       .container div{
+            border:1px solid red;
+        
+        }
+    </style>
+</head>
+<body
+    <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-8">####</div>
+            <div class="col-xs-6 col-md-4">****</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-md-4">1111</div>
+            <div class="col-xs-6 col-md-4">2222</div>
+            <div class="col-xs-6 col-md-4">3333</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">mmmm</div>
+            <div class="col-xs-6">nnnn</div>
+          </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-8">111111</div>
+          <div class="col-xs-6 col-md-4">222222</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-4">@@@@@</div>
+          <div class="col-xs-6 col-sm-4">#####</div>
+          <div class="col-xs-6 col-sm-4">%%%%%</div>
+        </div>
+    </div>
+    <hr>
+    <p>
+             <h3>实例：多余的列（column）将另起一行排列</h3>
+             实例：多余的列（column）将另起一行排列,如果在一个 .row 内包含的列（column）大于12个，包含多余列（column）的元素将作为一个整体单元被另起一行排列。
+    </p>
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-9">.col-xs-9</div>
+          <div class="col-xs-4">
+              .col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto
+               a new line as one contiguous unit.
+           </div>
+          <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+      <p>
+        <h3>响应式列重置</h3>
+        即便有上面给出的四组栅格class，你也不免会碰到一些问题，例如，在某些阈值时，<br>某些列可能会出现比别的列高的情况。为了克服这一问题，建议联合使用 .clearfix 和 响应式工具类。
+      </p>
+      <div class="row">
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3,fasdfasd<br>sdfsad</div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+        <div class="clearfix visible-xs-block">666大顺</div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+      </div>
+    </div>
+    <hr>
+    <h3>除了列在分界点清除响应， 您可能需要 重置偏移, 后推或前拉某个列。请看此栅格实例。</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+        <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">
+         .col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+        <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+      </div>
+    </div>
+</body>
+</html

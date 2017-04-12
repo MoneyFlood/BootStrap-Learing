@@ -2,22 +2,27 @@
 <html lang="en">
 <head>
      <meta charset="UTF-8">
-    <!--移动设备优先 -->
+    <!-- 移动设备 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>demo</title>
+    <title>栅格布局</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <script src="js/jquery-1.12.3.js" ></script>
     <script src="js/bootstrap.js" ></script>
     <style type="text/css">
         div{
-            border:1px solid green;
+            border:1px solid red;
+        
         }
-      
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row ">
+    <!--将最外面的布局元素 .container 修改为 .container-fluid，
+          就可以将固定宽度的栅格布局转换为 100% 宽度的布局。
+          这种方式是可以取消响应式布局
+    -->
+   <!--  <div class="container"> -->
+    <div class="container-fluid">
+       <div class="row ">
             <div class="col-md-1">col-md-1</div>
             <div class="col-md-1">col-md-1</div>
             <div class="col-md-1">col-md-1</div>
